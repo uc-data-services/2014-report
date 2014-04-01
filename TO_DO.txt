@@ -1,0 +1,6 @@
+* create a duration from the in/out data we have and then do breaks/cuts
+* and make relfreq dist from it (see r tutorial book in kindle)
+* also do same thing with patron ID info (return visitors)
+* then crosstab return visitors with duration -- see if more they come
+* the longer they stay -- obvious
+* look up ddply functions for freq dists etc

@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1395008284264.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B43969F4",
+    "lastKnownWriteTime" : 7810472581452360803,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "dt2005_13",
+        "contentUrl" : "content?title=dt2005_13&file=b65ceccc54c144b4a2f55d75d2624c59.htm",
+        "displayedObservations" : 1000,
+        "displayedVariables" : 4,
+        "totalObservations" : 4453,
+        "variables" : 4
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

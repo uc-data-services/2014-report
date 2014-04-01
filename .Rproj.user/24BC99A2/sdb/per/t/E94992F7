@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1395007625589.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "E94992F7",
+    "lastKnownWriteTime" : 4050479027159302144,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "lab_stats.2012_13",
+        "contentUrl" : "content?title=lab_stats.2012_13&file=9a014267168b4de9abe53deee9b25da4.htm",
+        "displayedObservations" : 926,
+        "displayedVariables" : 4,
+        "totalObservations" : 926,
+        "variables" : 4
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

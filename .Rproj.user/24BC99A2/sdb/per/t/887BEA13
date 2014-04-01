@@ -1,0 +1,16 @@
+{
+    "contents" : "#Load the packages used\nlibrary(devtools)\nlibrary(ggplot2)\nlibrary(knitr) \nlibrary(knitcitations) \nlibrary(lubridate)\nlibrary(plyr)\nlibrary(RCurl)\nlibrary(reports)\nlibrary(xts)\n\noptions(github.user = \"hadley\")\n\n#Source \"extra_functions.R\":\nsource(file.path(getwd(), \"extra_functions.R\"))\n",
+    "created" : 1395606262035.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "485745216",
+    "id" : "887BEA13",
+    "lastKnownWriteTime" : 1395611946,
+    "path" : "~/Dropbox/Documents/datalab/datalabreport/.Rprofile",
+    "project_path" : ".Rprofile",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

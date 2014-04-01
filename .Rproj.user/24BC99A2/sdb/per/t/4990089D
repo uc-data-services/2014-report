@@ -1,0 +1,16 @@
+{
+    "contents" : "#Source the following project functions on startup\nsource(file.path(getwd(), \"load_dlab_usage.R\"))\nsource(file.path(getwd(), \"clean_dlab_usage.R\"))",
+    "created" : 1395606374356.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "82194972",
+    "id" : "4990089D",
+    "lastKnownWriteTime" : 1395613852,
+    "path" : "~/Dropbox/Documents/datalab/datalabreport/extra_functions.R",
+    "project_path" : "extra_functions.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

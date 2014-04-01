@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1395007621807.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BEA46B8",
+    "lastKnownWriteTime" : 4771339789472384512,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "lab_stats.2005_12",
+        "contentUrl" : "content?title=lab_stats.2005_12&file=d248b0a68bc74c23a622c57aa4d5af80.htm",
+        "displayedObservations" : "1000",
+        "displayedVariables" : 3,
+        "totalObservations" : "3527",
+        "variables" : "3"
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

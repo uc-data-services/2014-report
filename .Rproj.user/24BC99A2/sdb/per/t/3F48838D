@@ -1,0 +1,16 @@
+{
+    "contents" : "#creating a date/time vector\ndt_stats2005_12 <- mdy_hms(paste(lab_stats.2005_12$date.in,lab_stats.2005_12$time.in))\ndt_stats2012_3 <- mdy_hms(lab_stats.2012_13$Timestamp)\n#creating a %Y%m freq table as data.frame\ndt2005_13 <- data.frame(c(dt_stats2005_12, dt_stats2012_3))\ncolnames(dt2005_13)[1] <- \"timestamp\"\ndt2005_13 <- transform(dt2005_13, \n                        year = year(timestamp),\n                        month = month(timestamp),\n                        dayofyear = yday(timestamp)\n)\n#can use ddply below to create byday freq, then can convert to ts - might not need above col year\ndt_ymfreq <- as.data.frame(with(dt2005_13, table(year, month)))\nindex <- with(dt_ymfreq, order(year, month))\ndt_ymfreq <- dt_ymfreq[index,]\nggplot(dt_ymfreq, aes(month, Freq)) + geom_line(aes(colour=year))\nggplot(dt_ymfreq, aes(month, Freq)) + geom_line( )  + facet_grid(year ~ .)\n# trying to put multi years on plot\nggplot(dt_ymfreq, aes(month, Freq, group=year)) + \n  geom_line( aes(colour = year) )  + \n  geom_point( aes(shape = year))",
+    "created" : 1395007669648.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "780350816",
+    "id" : "3F48838D",
+    "lastKnownWriteTime" : 1395611951,
+    "path" : "~/Dropbox/Documents/datalab/datalabreport/clean_dlab_usage.R",
+    "project_path" : "clean_dlab_usage.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

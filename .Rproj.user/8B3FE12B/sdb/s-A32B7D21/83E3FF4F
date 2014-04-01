@@ -1,0 +1,16 @@
+{
+    "contents" : "require(RCurl)\n#Need to load two usage csv files. these come from different time frames and different collection methonds --\n#grab 2005-2012 from gdocs & read as dframe - these data were from paper sign in sheets that were  manually keyed\ncsv05_12 <- getURL(\"https://docs.google.com/spreadsheet/pub?key=0Aom2VaaJk0aodGh5Sy1SUmZWQXZFV19YNWdkbUZyLXc&single=true&gid=0&output=csv\")\nstats2005_12 <- read.csv(textConnection(csv05_12), header=TRUE, as.is=TRUE)\n#grab 2012 -; a google form based usage doc where we record ids via barcode reader\ncsv12_13 <- getURL(\"https://docs.google.com/spreadsheet/pub?key=0Aom2VaaJk0aodHRMUVJMcWtpMkNoblgyckphbllsaXc&single=true&gid=0&output=csv\")\nstats2012_13 <- read.csv(textConnection(csv12_13), header=TRUE, as.is=TRUE)",
+    "created" : 1396047539054.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3297396833",
+    "id" : "83E3FF4F",
+    "lastKnownWriteTime" : 1379545156,
+    "path" : "~/Dropbox/Documents/datalab/datalabreport/load_dlab_usage.R",
+    "project_path" : "load_dlab_usage.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
