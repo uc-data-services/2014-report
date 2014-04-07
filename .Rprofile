@@ -9,8 +9,9 @@ library(plyr)
 library(RCurl)
 library(reports)
 library(xts)
+library(xtsExtra)
 
-options(github.user = "hadley")
+options(github.user = "jt14den")
 
 #Source "extra_functions.R":
 source(file.path(getwd(), "extra_functions.R"))

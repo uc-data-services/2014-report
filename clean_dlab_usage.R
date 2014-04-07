@@ -8,8 +8,19 @@ st12_14$Timestamp <- mdy_hms(st12_14$Timestamp, tz = "America/Los_Angeles")
 #might need to create a df and add a count varible of 1 for lenght of vector,
 #when adding timestamp as is, seems to expect a measured value and this shows
 #as NAs.
-dlstats.xts = as.xts(append(st2005_14, st12_14$Timestamp))
+dlstats  = data.frame(append(st2005_14, st12_14$Timestamp))
+#need a measure for the xts -- basically each timestamp is 1
+dlstats$count = rep(1, nrow(dlstats))
+#rename ugly append column name
+names(dlstats)[names(dlstats)=="append.st2005_14..st12_14.Timestamp."] <- "timestamp"
+dlst.xts <- xts(dlstats[,-1], order.by=dlstats[,1])
 
+aggregate(dlst.xts, as.yearmon, sum)
+aggregate(dlst.xts, as.Date(as.yearmon(day(dlst.xts))), mean) #retuns 1 
+
+apply.daily(dlst.xts, sum)
+#poss use just the [] notation to get periods needed 
+autoplot.zoo(apply.daily(dlst.xts, sum)) + ggtitle("dlab figs")
 #some frequencies
 
 #need to figure out how to get FY data
